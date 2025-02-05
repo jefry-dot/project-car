@@ -2,25 +2,32 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    // $aboutPageUrl = '/about';
+use App\Http\Controllers\HomeController;
 
-    // $aboutPageUrl = route('about');
-    // dd($aboutPageUrl);
 
-    // $productUrl = route('product.view', ['lang' => 'en', 'id' => 1]);
-    // dd($productUrl);
-    return view('welcome');
-});
+Route::get('/', [HomeController::class,'index'])->name('home');
+
+
 
 Route::view('/about', 'about')->name('about');
 
-Route::get('/sum/{num1}/{num2}', function (float $num1, float $num2) {
-    
 
-    $sum = $num1 + $num2;
-    return "Sum of $num1 and $num2 is $sum";
-})->whereNumber(['num1', 'num2']);
+
+
+// Route::controller(CarController::class)->group(function(){
+//     Route::get('/car',[CarController::class, 'index']);
+//     Route::get('/my-cars',[CarController::class, 'index']);
+// });
+
+
+// // biar nanti routernya bisa di akses di controller
+// Route::get('/car/invokable', CarController::class);
+// Route::get('/car', [CarController::class, 'index']);
+
+
+
+
+
 
 
 
