@@ -13,6 +13,8 @@ class HomeController extends Controller
         return view("home.index")
         ->with("name","Laravel")
         ->with("surename","Course")
-        ->with("job","<b>Developer</b>");
+        ->with("country","uk")
+        ->with("job","<b>Developer</b>")
+        ->with("hobbies",["Cooking","Reading"]);
     }
 }
