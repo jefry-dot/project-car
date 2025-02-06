@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\View;
+
+
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return 'index';
+        return view("home.index")
+        ->with("name","Laravel")
+        ->with("surename","Course")
+        ->with("job","<b>Developer</b>");
     }
 }
