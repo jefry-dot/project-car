@@ -120,11 +120,7 @@
         <!--/ New Cars -->
       </main>
       
-      <x-slot:footerLinks>
-        <a href="#">Footer Link 3</a>
-        <a href="#">Footer Link 4</a>
 
-      </x-slot:footerLinks>
      
       
 

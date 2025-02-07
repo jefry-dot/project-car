@@ -28,7 +28,7 @@
       rel="stylesheet"
     /> -->
 
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="/css/app.css" />
     <!-- <link rel="stylesheet" href="css/output.css" /> -->
   </head>
   <body @if($bodyClass) class="{{ $bodyClass }} @endisset">
@@ -40,5 +40,5 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
   </body>
